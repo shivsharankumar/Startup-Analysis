@@ -1,14 +1,5 @@
 
-# Preprocessing
-# -> drop remarks column 
-# -> set index sno 
-# -> rename col  
-# -> convert amount to cr rs   
-# -> date col  
-# -> dropna    
 import streamlit as st
-# import pandas as pd
-
 from func import usd_to_inr,clean_date_column,pd,load_investors_details,st,load_general_analysis
 st.set_page_config(layout='wide',page_title='Startup Funding Analysis')
 df=pd.read_csv('/Users/shiv_sharan/Desktop/datasets/startup_funding.csv')
